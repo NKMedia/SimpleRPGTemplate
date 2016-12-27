@@ -3,12 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CloseGame : MonoBehaviour
+namespace NKM.RPGFramework
 {
-    public void QuitGame()
+    public class CloseGame : MonoBehaviour
     {
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        Application.Quit();
-    }
+        public SceneController sceneController;
 
+        void Start()
+        {
+            sceneController = FindObjectOfType<SceneController>();
+        }
+
+        public void QuitGame()
+        {
+            Application.Quit();
+            sceneController.FadeOutEndGame();
+        }
+
+    }
 }

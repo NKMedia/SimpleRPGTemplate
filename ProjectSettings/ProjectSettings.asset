@@ -10,7 +10,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: NKMedia
   productName: SimpleRPGTemplate
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -207,7 +207,7 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 2800000, guid: 28ba27297d5408042ab1b98fa37e8bd8,
+  resolutionDialogBanner: {fileID: 2800000, guid: 69680b688d11eb9d30009b3b4241aa39,
     type: 3}
   m_BuildTargetIcons: []
   m_BuildTargetBatching: []
