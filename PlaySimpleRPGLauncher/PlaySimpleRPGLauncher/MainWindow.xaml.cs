@@ -16,6 +16,8 @@ using System.Windows.Shapes;
 namespace PlaySimpleRPGLauncher
 {
     /// <summary>
+    /// Author: Nico Küchler 2016
+    /// 
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
@@ -27,7 +29,7 @@ namespace PlaySimpleRPGLauncher
 
         private void LaunchGameButton_Click(object sender, RoutedEventArgs e)
         {
-            Launcher.PlayGame();
+            Launcher.PlayGame("SimpleRPGTemplate.exe");
         }
 
         private void LaunchWebsiteButton_Click(object sender, RoutedEventArgs e)
