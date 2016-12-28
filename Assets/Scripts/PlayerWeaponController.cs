@@ -41,9 +41,9 @@ namespace NKM.RPGFramework
             }//Hand is now empty or was empty already
 
             //Add new Weapon to the hand
-            EquippedWeapon = (GameObject)Instantiate(Resources.Load<GameObject>("Weapons/" + itemToEquip.ObjectSlug), playerHand.transform.position,playerHand.transform.rotation);
+            EquippedWeapon = (GameObject)Instantiate(Resources.Load<GameObject>("Weapons/" + itemToEquip.ObjectSlug), playerHand.transform.position, playerHand.transform.rotation);
             iWeapon = EquippedWeapon.GetComponent<IWeapon>();
-            
+
             //Add the stats of the new Weapon
             iWeapon.Stats = itemToEquip.Stats;
             charakterStats.AddStatBonus(itemToEquip.Stats);

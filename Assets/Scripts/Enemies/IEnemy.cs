@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace NKM.RPGFramework
 {
-    public class DataController : MonoBehaviour
+    //Interface for all enemies
+    public interface IEnemy
     {
+        void TakeDamage(int amount);
+        void PerformAttack();
 
     }
 }

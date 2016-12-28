@@ -26,6 +26,13 @@ namespace NKM.RPGFramework
             Debug.Log(this.name + "performes a special attack!");
             animator.SetTrigger("Special_Attack");
         }
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "Enemy")
+            {
+                other.GetComponent<IEnemy>().TakeDamage(2);
+            }
+        }
 
     }
 }
